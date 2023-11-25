@@ -80,7 +80,7 @@ export const EditUsernameForm = ({currentUsername}: EditUsernameFormProps) => {
                   />
                 </FormControl>
                 <FormMessage />
-                <FormDescription>Username must not contain spaces, use "_" instead</FormDescription>
+                <FormDescription>Username must not contain spaces, use _ instead</FormDescription>
               </FormItem>
             )}
           />

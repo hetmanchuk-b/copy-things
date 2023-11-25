@@ -133,7 +133,7 @@ export const ThingForm = (
                   <FormControl>
                     <Input
                       disabled={isSubmitting}
-                      placeholder={"Doctor\'s phone number"}
+                      placeholder={"My phone number"}
                       {...field}
                     />
                   </FormControl>

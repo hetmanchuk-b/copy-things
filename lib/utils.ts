@@ -11,7 +11,7 @@ export function isAxiosError(error: any): error is AxiosError {
 }
 
 export const formatDateToLocal = (
-  dateStr: string,
+  dateStr: string | number,
   locale: string = 'en-US',
   formatType: 'full' | 'short' = 'full'
 ) => {
@@ -43,7 +43,9 @@ export const formatDateToLocal = (
   return formatter.format(date);
 };
 
-export function getRelativeTime(dateString: string): string {
+export function getRelativeTime(
+  dateString: string | number
+): string {
   const currentDate = new Date();
   const inputDate = new Date(dateString);
 

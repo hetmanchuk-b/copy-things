@@ -46,7 +46,7 @@ export const ThingSmallItem = ({thing}: ThingSmallItemProps) => {
             size={'icon'}
             variant={'outline'}
             className="border-2"
-            onClick={() => onOpen('editThing', thing)}
+            onClick={() => onOpen('editThing', {thing})}
           >
             <Icons.edit className="w-5 h-5" />
           </Button>
@@ -56,7 +56,7 @@ export const ThingSmallItem = ({thing}: ThingSmallItemProps) => {
             size={'icon'}
             variant={'outline'}
             className="border-2 border-rose-500 text-rose-500 hover:border-zinc-600"
-            onClick={() => onOpen('deleteThing', thing)}
+            onClick={() => onOpen('deleteThing', {thing})}
           >
             <Icons.delete className="w-5 h-5" />
           </Button>

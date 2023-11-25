@@ -22,11 +22,11 @@ export const DeleteThingModal = () => {
   const isModalOpen = isOpen && type === 'deleteThing';
   const router = useRouter();
 
-  const thing = data as {thing: Thing};
+  const thing = data as Thing;
 
   const onDelete = async () => {
     try {
-      await axios.delete(`/api/thing/${thing.id}`);
+      await axios.delete(`/api/thing/${thing?.id}`);
       toast.success('Thing has been deleted.');
       router.refresh();
       onClose();

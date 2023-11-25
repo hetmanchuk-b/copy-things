@@ -17,7 +17,7 @@ export const UserAvatar = ({user, ...props}: UserAvatarProps) => {
             width={50}
             height={50}
             src={user.image}
-            alt={user.username}
+            alt={user.username || ''}
             referrerPolicy='no-referrer'
           />
         </div>
