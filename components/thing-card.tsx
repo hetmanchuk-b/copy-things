@@ -77,12 +77,12 @@ export const ThingCard = ({thing}: ThingCardProps) => {
       <CardContent>
         <div className="flex flex-col gap-y-2">
           {thing.title && <p className="text-xl font-bold">{thing.title}</p>}
-          <div className="border-2 border-zinc-500 border-dashed rounded-md shadow p-2 whitespace-pre">
+          <div className="border-2 border-zinc-500 border-dashed rounded-md shadow p-2">
             {thing.content}
           </div>
         </div>
       </CardContent>
-      <CardFooter className="flex items-center gap-x-2 p-6 bg-zinc-400">
+      <CardFooter className="flex sm:items-center flex-col sm:flex-row items-stretch gap-2 p-6 bg-zinc-400">
         <Button
           variant={'outline'}
           className={cn(
@@ -92,10 +92,10 @@ export const ThingCard = ({thing}: ThingCardProps) => {
           size={'lg'}
           onClick={onCopyLink}
         >
-          Copy link
+          Copy link to note
           {linkCopied
-            ? <Icons.check className="w-5 h-5" />
-            : <Icons.copy className="w-5 h-5" />}
+            ? <Icons.copyCheck className="w-5 h-5" />
+            : <Icons.copyPlus className="w-5 h-5" />}
         </Button>
         <Button
           className={cn(
@@ -105,7 +105,7 @@ export const ThingCard = ({thing}: ThingCardProps) => {
           size={'lg'}
           onClick={onCopyContent}
         >
-          Copy text
+          Copy this content
           {contentCopied
             ? <Icons.check className="w-5 h-5" />
             : <Icons.copy className="w-5 h-5" />}

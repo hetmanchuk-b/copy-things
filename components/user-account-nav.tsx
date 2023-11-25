@@ -26,8 +26,8 @@ export const UserAccountNav = ({user}: UserAccountNavProps) => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">
-        <div className="flex items-center gap-x-2 py-2 px-4 bg-zinc-900/10 hover:bg-zinc-900/20 rounded-md">
+      <DropdownMenuTrigger className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 self-stretch">
+        <div className="flex items-center justify-center gap-x-2 py-2 px-4 bg-zinc-900/10 hover:bg-zinc-900/20 rounded-md">
           <div className="text-zinc-50 font-semibold">
             {user.username}
           </div>
@@ -37,7 +37,7 @@ export const UserAccountNav = ({user}: UserAccountNavProps) => {
           />
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align='end' className="bg-muted-foreground text-zinc-50">
+      <DropdownMenuContent align='center' className="bg-muted-foreground text-zinc-50">
         <div className="flex flex-col space-y-1 leading-none pl-2 pb-1">
           {user.username && (
             <div className="flex items-center justify-between gap-2">

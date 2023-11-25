@@ -11,6 +11,8 @@ import {
   Pointer,
   Trash2,
   Check,
+  CopyCheck,
+  CopyPlus,
   type LucideIcon,
   type LucideProps,
 } from '../node_modules/lucide-react';
@@ -20,6 +22,8 @@ export type Icon = LucideIcon;
 export const Icons = {
   chevronLeft: ChevronLeft,
   copy: Copy,
+  copyCheck: CopyCheck,
+  copyPlus: CopyPlus,
   spinner: Loader2,
   user: User,
   logout: LogOut,

@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn('bg-zinc-300 pt-[60px]', font.className)}>
+      <body className={cn('bg-zinc-300 sm:pt-[60px]', font.className)}>
       <Navbar />
       {children}
 
