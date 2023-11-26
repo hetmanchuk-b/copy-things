@@ -13,6 +13,7 @@ import {
   Check,
   CopyCheck,
   CopyPlus,
+  Eye,
   type LucideIcon,
   type LucideProps,
 } from '../node_modules/lucide-react';
@@ -34,6 +35,7 @@ export const Icons = {
   pointer: Pointer,
   delete: Trash2,
   check: Check,
+  eye: Eye,
   google: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

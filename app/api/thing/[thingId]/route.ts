@@ -13,6 +13,10 @@ export async function DELETE(
       return new NextResponse('Unauthorized', {status: 401});
     }
 
+    if (!params.thingId) {
+      return new NextResponse('Thing ID missing', {status: 400});
+    }
+
     const createdThing = await db.thing.findFirst({
       where: {
         id: params.thingId,
@@ -53,6 +57,10 @@ export async function PATCH(
 
     if (!content) {
       return new NextResponse('Content missing', {status: 400});
+    }
+
+    if (!params.thingId) {
+      return new NextResponse('Thing ID missing', {status: 400});
     }
 
     const createdThing = await db.thing.findFirst({

@@ -44,7 +44,6 @@ export const EditUsernameForm = ({currentUsername}: EditUsernameFormProps) => {
   const onSubmit = async (values: formData) => {
     try {
       const response = await axios.patch('/api/username', values);
-      console.log(response.data)
       toast.success(`Username has been updated to ${response?.data?.username}.`);
       form.reset();
       onClose();

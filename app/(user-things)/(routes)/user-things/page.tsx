@@ -33,6 +33,9 @@ const UserThingsPage = async () => {
 
   return (
     <div className="p-2 md:p-4 flex flex-col items-start">
+      {user?.things && user?.things?.length < 1 && (
+        <p className="font-semibold text-zinc-700 text-center mx-auto">Empty...</p>
+      )}
       {user?.things?.map((thing) => (
         <ThingSmallItem
           key={thing.id}
