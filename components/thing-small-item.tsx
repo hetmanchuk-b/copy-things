@@ -25,7 +25,7 @@ export const ThingSmallItem = ({thing}: ThingSmallItemProps) => {
             className={cn(buttonVariants({variant: 'link'}), 'gap-x-2')}
           >
             <Icons.pointer className="w-4 h-4" />
-            {thing.id}
+            <span className="w-[50px] truncate sm:w-auto">{thing.id}</span>
           </Link>
         </HoverCardTrigger>
         <HoverCardContent className="w-[300px] max-h-[400px] overflow-hidden">

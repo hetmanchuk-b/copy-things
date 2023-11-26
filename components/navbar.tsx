@@ -13,7 +13,7 @@ export const Navbar = async () => {
 
   return (
     <div className="w-full bg-muted-foreground text-primary-foreground sm:fixed top-0 z-10 h-auto sm:h-[60px] flex-col-reverse sm:flex-row py-2 sm:py-0 justify-center gap-2 flex items-center px-2">
-      <Link href={'/'} className="flex items-center gap-x-2 p-3 font-semibold text-md text-zinc-50 transition rounded-md hover:bg-zinc-900/20 hover:text-zinc-300">
+      <Link href={'/'} className="flex items-center gap-x-2 p-3 font-semibold text-md text-zinc-50 transition rounded-md hover:bg-zinc-900/20">
         <Icons.copy className="w-6 h-6" />
         CopyThing App
       </Link>
