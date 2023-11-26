@@ -173,6 +173,7 @@ export const ThingForm = (
                 <Button
                   variant={'outline'}
                   onClick={onClose}
+                  type={'button'}
                 >
                   Cancel
                 </Button>
@@ -182,7 +183,7 @@ export const ThingForm = (
                 disabled={isSubmitting || !isValid}
                 type='submit'
               >
-                Save
+                {formType === 'create' ? 'Publish' : 'Save'}
                 {isSubmitting
                   ? <Icons.spinner className="animate-spin w-6 h-6" />
                   : <Icons.save className="w-6 h-6" />}

@@ -13,7 +13,7 @@ export const EditThingModal = () => {
   const {isOpen, onClose, type, data} = useModal();
   const isModalOpen = isOpen && type === 'editThing';
 
-  const thing = data as Thing;
+  const {thing} = data as {thing: Thing};
 
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>

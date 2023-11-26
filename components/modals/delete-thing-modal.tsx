@@ -22,7 +22,7 @@ export const DeleteThingModal = () => {
   const isModalOpen = isOpen && type === 'deleteThing';
   const router = useRouter();
 
-  const thing = data as Thing;
+  const {thing} = data as {thing: Thing};
 
   const onDelete = async () => {
     try {
